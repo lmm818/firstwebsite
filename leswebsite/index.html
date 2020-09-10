@@ -1,0 +1,43 @@
+<!DOCTYPE html> <!-- This is an html document! Website friendly! -->
+<html lang="en" dir="ltr"> <!-- This declares the basis of an html file -->
+  <head> <!-- I wrote the comment in line 4 before this, and as I am researching, I see that this element also serves to contain metadata -->
+    <meta charset="utf-8"> <!-- To my understanding, this is where metadata exists. Not too sure what that means, but after reading, its more for machines to learn how to interpret your code/website-->
+    <title>The Mandalorian</title> <!-- This writes the title on the tab of the website -->
+    <style>
+      body {
+        background-image: url("stars.jpg");
+        background-repeat: repeat;
+      }
+      /* <!-- the lines above set the background to an image of stars for the entire
+      webpage. I figured out through "CSS background-repeat Property" how to make
+      the image repeat vertically and horizontally with this command.
+      I am confused as to why this comment isn't grayed out in atom though-->
+      I used command + / and realized maybe css has a different way to write comments.*/
+      img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      /* according to w3, to center an image, I have to make it a block first and change the margins.
+      I assume having the margins set at auto makes it automatically go 50-50 */
+    </style>
+    <!-- I think its very interesting how different css style rules look when they are not inline (as below). I ended up using the <style> tag up here because I wanted to edit the background
+    and then I changed the image layout as well. -->
+  </head>
+  <body>
+    <p style="font-family:Arial Black; color:white; font-size:220%; text-align:center;">The Mandalorian</p>
+    <!-- I began to experiment with ways to manipulate text here, and I went to w3's page of css web safe fonts for readibility and decided arial black was the closest to star wars font
+    Since the background is black, I have to change the color. I made this the biggest size as its the most important part, and I centered the text mostly because I like the way things
+    look centered, it also guided the rest of the layout of the page. P also makes a new paragraph.-->
+    <img src="theduo.gif" alt="Baby Yoda and The Mandalorian">
+    <!-- The above line helps me insert an image with src locating the source of my image and alt provides alternative text for the image if my image fails to load or software needs to read it. -->
+    <p style="font-family:Arial Black; color:white; font-size:180%; text-align:center;">On Disney+ this October</p>
+    <!-- I used similar style attributes to the previous paragraph, except made the font size smaller to kind of guide eyes to whats important.-->
+    <p style="font-family:times; color:white; font-size:130%;"><i>*Disney is not liable for any attachment to the characters, heartbreak, or any negative reactions. We take credit for the good reactions though.</i></p>
+    <!-- I thought it would be funny to add in a disclaimer for the show, so I decided to use it to experiment with different kind of style attributes, I changed the font size
+    as well as the font family. I did not center this paragraph or the one below since in my mind they were not necessarily attached to the main part of the website I wanted to present.
+    I also feel like it gives it more of a "corporate here" visual.-->
+    <a href="https://disneyplusoriginals.disney.com/show/the-mandalorian" style="font-family:times; color:white; font-size:130%;">Learn more here!</a>
+    <!-- This tag is used for hyperlinks, so I decided to use it to show more information about The Mandalorian. I was also able to apply style attributes to the hyperlink.-->
+  </body>
+</html>
